@@ -52,6 +52,17 @@ export default () => (
         background-size: cover;
         margin-bottom: 15px;
       }
+      @media(max-width: 768px) {
+        .items > div {
+          width: 48%;
+        }
+      }
+      @media (max-width: 470px) {
+        .items > div {
+          width: 98%;
+        }
+      }
+
     `}</style>
   </div>
 ) 

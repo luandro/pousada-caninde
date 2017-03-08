@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
          <link rel="shortcut icon" href="/static/favicon.ico" />
-         <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyB1nKALF_1Sdnq6GnPzFu6kAoSGrUQNVXo&sensor=false"></script>
+         <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyBsr3RFIuUoYkvrarEThfbq_beHu97AgXI&sensor=false"></script>
          <style>{`
           body, html {
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -63,7 +63,7 @@ export default class MyDocument extends Document {
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
           }
           .slick-slide {
-
+            font-weight: 300;
           }
           @media(max-width: 1200px) {
             .container {
@@ -71,11 +71,16 @@ export default class MyDocument extends Document {
               margin: auto;
             }
           }
+          @media(max-width: 1024px) {
+            .container {
+              width: 100%;
+              margin: auto;
+            }
+          }
           @media(max-width: 768px) {
             .pic img {
               width: 130px;
               margin-top: -34px;
-
             }
           }
           `}</style>

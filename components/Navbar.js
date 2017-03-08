@@ -48,9 +48,9 @@ export default ({ open, toggle }) => (
         )}
       </div>
       <div className="social">
-        <div className="socialItem"><FaFacebook /></div>
-        <div className="socialItem"><FaInstagram /></div>
-        <div className="socialItem"><FaEnvelopeO /></div>
+        <div className="socialItem"><a href="https://www.facebook.com/pousadacanindesaojorge/" target="_blank"><FaFacebook /></a></div>
+        <div className="socialItem"><a href="https://www.instagram.com/pousadacaninde/" target="_blank"><FaInstagram /></a></div>
+        <div className="socialItem"><a href="mailto:pousadacaninde@gmail.com"><FaEnvelopeO /></a></div>
       </div>
       <div className="mobileMenuBtn"><FaBars size="28" /></div>
     </div>
@@ -103,7 +103,8 @@ export default ({ open, toggle }) => (
       .social {
         width: 10%;
       }
-      .socialItem {
+      .socialItem a {
+        display: block;
         background: #fff;
         color: rgba(0, 85, 185, 0.8);
         text-align: center;

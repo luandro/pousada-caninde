@@ -17,8 +17,8 @@ const Map = ({ center, zoom }) => (
 )
 
 Map.defaultProps = {
-    center: {lat: 59.95, lng: 30.33},
-    zoom: 11
+    center: {lat: -14.1769177, lng: -47.8143979},
+    zoom: 17.5
 }
 
 export default Map;

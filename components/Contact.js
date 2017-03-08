@@ -20,7 +20,7 @@ const list = [
     'Excelente hospedagem para quem quer relaxar e estar próximo à natureza, contando ainda com o gentil atendimento de seus proprietários.',
 ]
 
-export default ({ handleChange, handleSubmit }) => (
+export default ({ handleChange, handleSubmit, name, email, comment }) => (
     <div className="wrapper" id="contact">
         <div className="container">
             <div className="box">
@@ -33,27 +33,27 @@ export default ({ handleChange, handleSubmit }) => (
                 <div className="list">
                     <div className="item">
                         <PhoneIcon size={20} color={'#000'} />
-                        <span>(61) 3892 8293</span>
+                        <span>(62) 3455-1060</span>
                     </div>
                     <div className="item">
                         <FbIcon size={20} color={'#000'} />
-                        <a href="facebook.com">facebook.com/pousadacaninde</a>
+                        <a href="https://www.facebook.com/pousadacanindesaojorge/" target="_blank">facebook.com/pousadacanindesaojorge</a>
                     </div>
                     <div className="item">
                         <InstaIcon size={20} color={'#000'} />
-                        <a href="instagram.com">instagram.com/pousadacaninde</a>
+                        <a href="https://www.instagram.com/pousadacaninde/">instagram.com/pousadacaninde</a>
                     </div>
                     <div className="item">
                         <MarkerIcon size={20} color={'#000'} />
-                        <span>Rua Canindé, 1119, São Jorge / PA</span>
+                        <span>Rua 12, Qd 6 Lt 13, São Jorge / Alto Paraíso - GO</span>
                     </div>
                 </div>
             </div>
             <div className="box contact">
                 <h3>Contato</h3>
-                <Input onChange={handleChange} />
-                <Input onChange={handleChange} />
-                <Input type='textarea' onChange={handleChange} />
+                <Input onChange={handleChange} placeholder={name}/>
+                <Input onChange={handleChange} placeholder={email} />
+                <Input type='textarea' onChange={handleChange} placeholder={comment} />
                 <Button onClick={handleSubmit}>
                     Enviar
                 </Button>
@@ -106,16 +106,27 @@ export default ({ handleChange, handleSubmit }) => (
                 margin: 0 auto;
                 width: 80%;
             }
-            @media(min-width: 768px) {
+
+            .container {
+                display: flex;
+                align-items: center;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+            }
+            .box {
+                width: 45%;  
+                height: 500px; 
+                margin: auto;                 
+            }
+            @media(max-width: 1024px) {
                 .container {
-                    display: flex;
-                    align-items: center;
-                    flex-flow: row nowrap;
-                    justify-content: space-between;
+                    display: block;
                 }
                 .box {
-                    width: 45%;  
-                    height: 500px;                  
+                    width: 98%;  
+                }
+                .list {
+                    margin-left: 30px;
                 }
             }
         `}</style>

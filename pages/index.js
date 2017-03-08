@@ -46,7 +46,7 @@ class Home extends React.Component {
         <About />
         <Services />
         <Pictures />
-        <Contact handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
+        <Contact handleChange={this.handleChange} handleSubmit={this.handleSubmit} {...this.state} />
         <Map />
       </div>
     )
