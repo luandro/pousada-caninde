@@ -1,12 +1,12 @@
-import Slider from 'react-slick'
+// import Slider from 'react-slick'
 
-const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-};
+// const settings = {
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+// };
 
 const list = [
     {
@@ -17,21 +17,24 @@ const list = [
 
 export default () => (
     <div className="wrapper">
-        <Slider {...settings} className="container">
+        {/*<Slider {...settings} className="container">*/}
             {list.map((item, key) => (
                 <div key={key} className="item" style={{ backgroundImage: `url(${item.image})`, display: 'flex' }}>
                     <h2>{item.message}</h2>
                 </div>
             ))}
-        </Slider>
+        {/*</Slider>*/}
         <style jsx>{`
             .wrapper {
                 height: 95vh;
+                width: 100%;
             }
             .container {
                 height: 95vh;
+                width: 100%;
             }
             .item {
+                width: 100%;
                 background-size: cover;
                 height: 95vh;
                 align-items: center;
