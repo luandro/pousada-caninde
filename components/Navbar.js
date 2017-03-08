@@ -3,6 +3,7 @@ import FaInstagram from 'react-icons/lib/fa/instagram'
 import FaEnvelopeO from 'react-icons/lib/fa/envelope-o'
 import FaBars from 'react-icons/lib/fa/bars'
 import { Link } from 'react-scroll'
+import ClickOutside from 'react-click-outside'
 
 const list = [
   {
@@ -27,7 +28,7 @@ const list = [
   },
 ]
 
-export default () => (
+export default ({ open, toggle }) => (
   <div className="wrapper">
     <div className="container">
       <div className="pic"><img src="/static/logo.png" /></div>
@@ -53,6 +54,23 @@ export default () => (
       </div>
       <div className="mobileMenuBtn"><FaBars size="28" /></div>
     </div>
+    <ClickOutside onClickOutside={toggle}>
+      <div className={open ? "popup open" : "popup closed"}>
+          {list.map((item, key) => <Link
+            key={key}
+            to={item.id}
+            activeClass="active"
+            spy
+            smooth
+            offset={-50}
+            duration={800}
+            className="link-small"
+          >
+            {item.title}
+          </Link>
+          )}
+      </div>
+    </ClickOutside>
     <style jsx>{`
       .wrapper {
         color: #fff;
@@ -97,6 +115,24 @@ export default () => (
       .mobileMenuBtn {
         display: none;
         margin-right: 23px;
+      }
+      .popup {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        background: white;
+        height: 200px;
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        padding: 20px;
+        transition: all ease-in-out 0.2s;
+      }
+      .popup.closed {
+        transform: translateY(-300px);
+      }
+      .popup.open {
+        transform: translateY(0px);
       }
       @media(max-width: 1200px) {
         .items {

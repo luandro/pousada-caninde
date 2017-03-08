@@ -16,6 +16,7 @@ class Home extends React.Component {
     name: 'Nome',
     email: 'E-mail',
     comment: 'Deixe seu comentário.',
+    menu: false,
   }
 
   handleChange = (name, value) => {
@@ -30,10 +31,17 @@ class Home extends React.Component {
     this.setState({ status: 'pending' });
   }
 
+  toggleMenu = () => {
+    this.setState({
+      menu: !this.state.menu,
+    })
+  }
+
   render() {
+    const { menu } = this.state;
     return (
       <div>
-        <Navbar />
+        <Navbar toggle={this.toggleMenu} open={menu} />
         <Hero />
         <About />
         <Services />
