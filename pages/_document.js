@@ -19,6 +19,8 @@ export default class MyDocument extends Document {
          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
          <link rel="shortcut icon" href="/static/favicon.ico" />
+         <meta name="theme-color" content={'#005FB6'} />
+         <link rel="manifest" href="static/manifest.json" />
          <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyBsr3RFIuUoYkvrarEThfbq_beHu97AgXI&sensor=false"></script>
          <style>{`
           body, html {
