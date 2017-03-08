@@ -1,1 +1,7 @@
-export default () => <h1>Alo</h1>
+import Navbar from '../components/Navbar'
+
+export default () => (
+  <div>
+    <Navbar />
+  </div>
+)
