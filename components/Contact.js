@@ -21,7 +21,7 @@ const list = [
 ]
 
 export default ({ handleChange, handleSubmit }) => (
-    <div className="wrapper">
+    <div className="wrapper" id="contact">
         <div className="container">
             <div className="box">
                 <h3>O que dizem sobre nós</h3>

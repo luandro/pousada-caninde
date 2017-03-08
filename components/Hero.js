@@ -16,7 +16,7 @@ const list = [
 ]
 
 export default () => (
-    <div className="wrapper">
+    <div className="wrapper" id="home">
         {/*<Slider {...settings} className="container">*/}
             {list.map((item, key) => (
                 <div key={key} className="item" style={{ backgroundImage: `url(${item.image})`, display: 'flex' }}>

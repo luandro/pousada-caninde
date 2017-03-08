@@ -26,7 +26,7 @@ const list = [
 ]
 
 export default () => (
-  <div className="wrapper">
+  <div className="wrapper" id="services">
     <div className="container">
       <h2>SERVIÇOS</h2>
       <div className="items ">
