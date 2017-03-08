@@ -16,5 +16,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start"
+  },
+  "devDependencies": {
+    "sw-precache-webpack-plugin": "^0.9.0"
   }
 }
