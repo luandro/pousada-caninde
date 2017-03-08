@@ -12,13 +12,6 @@ export default () => (
         font-weight: 200;
         line-height: 1.5;
       } 
-      h2 {
-        font-size: 60px;
-        font-family: 'Mouse Memoirs', sans-serif;
-        color: #005FB6;
-        font-weight: 400;
-        margin: 30px;
-      }
     `}</style>
   </div>
 ) 
