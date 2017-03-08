@@ -45,29 +45,13 @@ export default class MyDocument extends Document {
             shadow-box: none;
           }
           a {
-            position: relative;
             text-decoration: none;
             color: #000;
             cursor: pointer;
           }
-          a:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #005FB6;
-            visibility: hidden;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s;
-            transition: all 0.3s ease-in-out 0s;
-          }
-          a:hover:before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+          .link {
+            color: #fff;
+            font-family: 'Mouse Memoirs', sans-serif;
           }
           @media(min-width: 1024px) {
             .container {
