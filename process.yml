@@ -1,0 +1,3 @@
+apps:
+  - script   : server.js
+    max_memory_restart: 200M
