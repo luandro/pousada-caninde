@@ -10,8 +10,8 @@
 
 const list = [
     {
-        image: 'https://unsplash.it/1200/800/?random',
-        message: 'No coração da Chapada seu refúgio está de portas abertas',
+        image: '/static/banner.png',
+        message: 'NO CORAÇÃO DA CHAPADA DOS VEADEIROS, <br/>SEU REFÚGIO ESTÁ DE PORTAS ABERTAS',
     }
 ]
 
@@ -20,7 +20,7 @@ export default () => (
         {/*<Slider {...settings} className="container">*/}
             {list.map((item, key) => (
                 <div key={key} className="item" style={{ backgroundImage: `url(${item.image})`, display: 'flex' }}>
-                    <h2>{item.message}</h2>
+                    <h2>NO CORAÇÃO DA CHAPADA DOS VEADEIROS, <br/>SEU REFÚGIO ESTÁ DE PORTAS ABERTAS</h2>
                 </div>
             ))}
         {/*</Slider>*/}
@@ -42,7 +42,7 @@ export default () => (
                 justify-content: center;
             }
             .item h2 {
-                font-size: 2em;
+                font-size: 80px;
                 text-transform: uppercase;
                 color: #fff;
                 max-width: 95%;
