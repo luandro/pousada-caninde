@@ -1,18 +1,14 @@
-FROM node:boron
+FROM node:alpine
+MAINTAINER Keymetrics <contact@keymetrics.io>
 
-# Install PM2 and Yarn
-# RUN npm install pm2 yarn -g
+RUN npm install pm2 -g
 
-# Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+VOLUME ["/app"]
 
-# Install app dependencies
-COPY package.json /usr/src/app/
-RUN npm install
+# Expose ports
+EXPOSE 80 443 43554
 
-# Bundle app source
-COPY . /usr/src/app
+WORKDIR /app
 
-EXPOSE 3666
-CMD ["npm", "start"]
+# Start process.yml
+CMD ["pm2-docker", "start", "--auto-exit", "--env", "production"]
