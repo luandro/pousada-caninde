@@ -1,20 +1,15 @@
-FROM node:alpine
-MAINTAINER Keymetrics <contact@keymetrics.io>
+FROM node:boron
 
-RUN npm install pm2 -g
-RUN npm install yarn -g
-RUN pm2 install pm2-auto-pull
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-VOLUME ["/app"]
+# Install app dependencies
+COPY package.json /usr/src/app/
+RUN npm install
 
-# Expose ports
-EXPOSE 80 443 43554
+# Bundle app source
+COPY . /usr/src/app
 
-WORKDIR /app
-
-COPY . /app
-
-RUN yarn
-
-# Start process.yml
-CMD ["pm2-docker", "start", "--auto-exit", "--env", "production"]
+EXPOSE 8080
+CMD [ "npm", "start" ]
