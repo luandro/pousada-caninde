@@ -58,6 +58,10 @@ export default class MyDocument extends Document {
             font-weight: 400;
             color: #fff;
           }
+          .link-small {
+            color: #000;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          }
           .slick-slide {
             font-weight: 300;
           }
