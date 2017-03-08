@@ -34,7 +34,10 @@ export default class MyDocument extends Document {
             color: #005FB6;
             font-weight: 400;
           }
- 
+          button {
+            border: none;
+            shadow-box: none;
+          }
           @media(min-width: 1200px) {
             .container {
               width: 1170px;

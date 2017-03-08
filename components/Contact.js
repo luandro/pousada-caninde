@@ -67,9 +67,15 @@ export default ({ handleChange, handleSubmit }) => (
             .wrapper {
                 padding: 50px 0;
                 text-align: center;
+                box-shadow: 0 4px 4px rgba(0,0,0,0.8);
+                z-index: 1;
+            }
+            .wrapper h3 {
+                text-transform: uppercase;
+                width: 100%;
             }
             .container {
-                
+                padding-bottom: 50px;
             }
             .box {
             }
@@ -103,7 +109,7 @@ export default ({ handleChange, handleSubmit }) => (
                 }
                 .box {
                     width: 45%;  
-                    height: 250px;                  
+                    height: 300px;                  
                 }
             }
         `}</style>
