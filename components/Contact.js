@@ -78,6 +78,8 @@ export default ({ handleChange, handleSubmit, name, email, comment }) => (
                 padding-bottom: 50px;
             }
             .box {
+                margin: 0 auto;
+                max-width: 80%;
             }
             .slider p {
                 text-align: center;
@@ -90,6 +92,12 @@ export default ({ handleChange, handleSubmit, name, email, comment }) => (
                 flex-flow: column;
                 align-items: flex-start;
                 justify-content: space-between;
+            }
+            .item {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                max-width: 100%;
             }
             .item > * {
                 margin-left: 15px;
@@ -119,6 +127,9 @@ export default ({ handleChange, handleSubmit, name, email, comment }) => (
                 margin: auto;                 
             }
             @media(max-width: 1024px) {
+                .item > * {
+                    margin-left: 3px;
+                }
                 .container {
                     display: block;
                 }
@@ -126,7 +137,7 @@ export default ({ handleChange, handleSubmit, name, email, comment }) => (
                     width: 98%;  
                 }
                 .list {
-                    margin-left: 30px;
+                    text-align: left;
                 }
             }
         `}</style>
