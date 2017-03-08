@@ -36,9 +36,10 @@ export default class MyDocument extends Document {
             margin: auto;
           }
           h3 {
-            font-family: 'Mouse Memoirs', sans-serif;
+            font-family: Mouse Memoirs, sans-serif;
             color: #005FB6;
             font-weight: 400;
+            font-size: 38px;
           }
           button {
             border: none;
@@ -51,7 +52,13 @@ export default class MyDocument extends Document {
           }
           .link {
             color: #fff;
-            font-family: 'Mouse Memoirs', sans-serif;
+            font-family: Mouse Memoirs, sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            color: #fff;
+          }
+          .slick-slide {
+            
           }
           @media(min-width: 1024px) {
             .container {

@@ -38,7 +38,7 @@ export default () => (
           spy
           smooth
           offset={-50}
-          duration={200}
+          duration={800}
           className="link"
         >
           {item.title}
@@ -55,11 +55,11 @@ export default () => (
       .wrapper {
         color: #fff;
         text-transform: uppercase;
-        height: 50px;
+        height: 60px;
         top: 0;
         width: 100%;
         margin: 0 auto;
-        background: rgba(0, 85, 185, 0.8);
+        background: url(/static/fundo-menu.png);
         display: flex;
         align-items: center;
       }
@@ -71,13 +71,7 @@ export default () => (
         align-items: center;  
       }
       .pic {
-        width: 5%;
-        background: #fff;
-        width: 184px;
-        padding: 10px;
-        margin-top: 93px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        margin-top: 86px;
       }
       .items {
         width: 80%;
@@ -85,11 +79,6 @@ export default () => (
         flex-flow: row nowrap;
         justify-content: space-around;
         align-items: center; 
-      }
-      .items a {
-        font-size: 30px;
-        font-family: 'Mouse Memoirs', sans-serif;
-        font-weight: 400;
       }
       .social {
         width: 10%;

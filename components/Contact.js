@@ -15,9 +15,9 @@ const settings = {
 };
 
 const list = [
-    'lorem bla bla blablba bla bla bla bblablablabl alb alb al balbalba lba lba lba lba lab lab la',
-    'lorem bla bla blablba bla bla bla bblablablabl alb alb al balbalba lba lba lba lba lab lab la',
-    'lorem bla bla blablba bla bla bla bblablablabl alb alb al balbalba lba lba lba lba lab lab la',
+    'Excelente hospedagem para quem quer relaxar e estar próximo à natureza, contando ainda com o gentil atendimento de seus proprietários.',
+    'Excelente hospedagem para quem quer relaxar e estar próximo à natureza, contando ainda com o gentil atendimento de seus proprietários.',
+    'Excelente hospedagem para quem quer relaxar e estar próximo à natureza, contando ainda com o gentil atendimento de seus proprietários.',
 ]
 
 export default ({ handleChange, handleSubmit }) => (
