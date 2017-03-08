@@ -7,7 +7,8 @@ export default ({ children }) => (
             background: #005FB6;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
+            text-transform: uppercase;
         }
     `}</style>
     </button>

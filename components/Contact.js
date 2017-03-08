@@ -31,19 +31,19 @@ export default ({ handleChange, handleSubmit }) => (
                     ))}
                 </Slider>
                 <div className="list">
-                    <div>
+                    <div className="item">
                         <PhoneIcon size={20} color={'#000'} />
                         <span>(61) 3892 8293</span>
                     </div>
-                    <div>
+                    <div className="item">
                         <FbIcon size={20} color={'#000'} />
                         <a href="facebook.com">facebook.com/pousadacaninde</a>
                     </div>
-                    <div>
+                    <div className="item">
                         <InstaIcon size={20} color={'#000'} />
                         <a href="instagram.com">instagram.com/pousadacaninde</a>
                     </div>
-                    <div>
+                    <div className="item">
                         <MarkerIcon size={20} color={'#000'} />
                         <span>Rua Canindé, 1119, São Jorge / PA</span>
                     </div>
@@ -53,7 +53,7 @@ export default ({ handleChange, handleSubmit }) => (
                 <h3>Contato</h3>
                 <Input onChange={handleChange} />
                 <Input onChange={handleChange} />
-                <Input onChange={handleChange} />
+                <Input type='textarea' onChange={handleChange} />
                 <Button onClick={handleSubmit}>
                     Enviar
                 </Button>
@@ -61,11 +61,11 @@ export default ({ handleChange, handleSubmit }) => (
         </div>
         <div className="footer">
             <hr />
-            <span>Desenvolvido por Mtx Web Art 2017</span>
+            <span>© 2017 Desenvolvido por <b>Mtx Web Art</b></span>
         </div>
         <style jsx>{`
             .wrapper {
-                padding: 50px 0;
+                padding: 50px 0 80px;
                 text-align: center;
                 box-shadow: 0 4px 4px rgba(0,0,0,0.8);
                 z-index: 1;
@@ -84,12 +84,16 @@ export default ({ handleChange, handleSubmit }) => (
                 max-width: 80%;
             }
             .list {
-                height: 120px;
-                margin-top: 30px;
+                height: 160px;
+                margin-top: 140px;
                 display: flex;
                 flex-flow: column;
                 align-items: flex-start;
                 justify-content: space-between;
+            }
+            .item > * {
+                margin-left: 15px;
+                font-weight: 300;
             }
             .contact {
                 display: flex;
@@ -98,6 +102,7 @@ export default ({ handleChange, handleSubmit }) => (
                 justify-content: space-between;
             }
             .footer {
+                padding-top: 30px;
                 margin: 0 auto;
                 width: 80%;
             }
@@ -110,7 +115,7 @@ export default ({ handleChange, handleSubmit }) => (
                 }
                 .box {
                     width: 45%;  
-                    height: 300px;                  
+                    height: 500px;                  
                 }
             }
         `}</style>
