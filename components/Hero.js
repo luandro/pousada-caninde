@@ -49,6 +49,17 @@ export default () => (
                 text-align: center;
                 margin: 0 auto;
             }
+            @media(max-width: 992px) {
+                .item h2 {
+                    font-size: 60px;
+                }
+            }
+            @media(max-width: 768px) {
+                .item h2 {
+                    font-size: 50px;
+                }
+            }
+      
         `}</style>
     </div>
 )

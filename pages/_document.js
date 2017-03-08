@@ -59,7 +59,7 @@ export default class MyDocument extends Document {
             color: #fff;
           }
           .slick-slide {
-
+            font-weight: 300;
           }
           @media(max-width: 1200px) {
             .container {
@@ -67,11 +67,16 @@ export default class MyDocument extends Document {
               margin: auto;
             }
           }
+          @media(max-width: 1024px) {
+            .container {
+              width: 100%;
+              margin: auto;
+            }
+          }
           @media(max-width: 768px) {
             .pic img {
               width: 130px;
               margin-top: -34px;
-
             }
           }
           `}</style>

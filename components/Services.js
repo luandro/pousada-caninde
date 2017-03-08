@@ -65,6 +65,17 @@ export default () => (
         color: #fff;
         margin-top: 222px;
       }
+      @media(max-width: 768px) {
+        .items > div {
+          width: 48%;
+        }
+      }
+      @media (max-width: 470px) {
+        .items > div {
+          width: 98%;
+        }
+      }
+
     `}</style>
   </div>
 ) 

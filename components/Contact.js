@@ -20,7 +20,7 @@ const list = [
     'Excelente hospedagem para quem quer relaxar e estar próximo à natureza, contando ainda com o gentil atendimento de seus proprietários.',
 ]
 
-export default ({ handleChange, handleSubmit }) => (
+export default ({ handleChange, handleSubmit, name, email, comment }) => (
     <div className="wrapper" id="contact">
         <div className="container">
             <div className="box">
@@ -51,9 +51,9 @@ export default ({ handleChange, handleSubmit }) => (
             </div>
             <div className="box contact">
                 <h3>Contato</h3>
-                <Input onChange={handleChange} />
-                <Input onChange={handleChange} />
-                <Input type='textarea' onChange={handleChange} />
+                <Input onChange={handleChange} placeholder={name}/>
+                <Input onChange={handleChange} placeholder={email} />
+                <Input type='textarea' onChange={handleChange} placeholder={comment} />
                 <Button onClick={handleSubmit}>
                     Enviar
                 </Button>
@@ -106,16 +106,27 @@ export default ({ handleChange, handleSubmit }) => (
                 margin: 0 auto;
                 width: 80%;
             }
-            @media(min-width: 768px) {
+
+            .container {
+                display: flex;
+                align-items: center;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+            }
+            .box {
+                width: 45%;  
+                height: 500px; 
+                margin: auto;                 
+            }
+            @media(max-width: 1024px) {
                 .container {
-                    display: flex;
-                    align-items: center;
-                    flex-flow: row nowrap;
-                    justify-content: space-between;
+                    display: block;
                 }
                 .box {
-                    width: 45%;  
-                    height: 500px;                  
+                    width: 98%;  
+                }
+                .list {
+                    margin-left: 30px;
                 }
             }
         `}</style>

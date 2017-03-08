@@ -9,6 +9,7 @@ export default ({ children }) => (
             text-align: center;
             padding: 15px 0;
             text-transform: uppercase;
+            width: 104%;
         }
     `}</style>
     </button>
