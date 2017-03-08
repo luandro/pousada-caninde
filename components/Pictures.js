@@ -38,6 +38,7 @@ export default () => (
         display: flex;
         align-items: center;
         background: #E9E9E9;
+        padding: 20px 0 50px;
       } 
       .items {
         display: flex;
