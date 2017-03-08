@@ -23,11 +23,11 @@ export default () => (
       .wrapper {
         color: #fff;
         text-transform: uppercase;
-        height: 50px;
+        height: 60px;
         top: 0;
         width: 100%;
         margin: 0 auto;
-        background: rgba(0, 85, 185, 0.8);
+        background: url(/static/fundo-menu.png);
         display: flex;
         align-items: center;
       }
@@ -41,8 +41,8 @@ export default () => (
       .pic {
         width: 5%;
         background: #fff;
-        width: 184px;
-        padding: 10px;
+        width: 162px;
+        padding: 15px;
         margin-top: 93px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -58,6 +58,7 @@ export default () => (
         font-size: 30px;
         font-family: 'Mouse Memoirs', sans-serif;
         font-weight: 400;
+        color: #fff;
       }
       .social {
         width: 10%;
