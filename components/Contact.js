@@ -33,19 +33,19 @@ export default ({ handleChange, handleSubmit, name, email, comment }) => (
                 <div className="list">
                     <div className="item">
                         <PhoneIcon size={20} color={'#000'} />
-                        <span>(61) 3892 8293</span>
+                        <span>(62) 3455-1060</span>
                     </div>
                     <div className="item">
                         <FbIcon size={20} color={'#000'} />
-                        <a href="facebook.com">facebook.com/pousadacaninde</a>
+                        <a href="https://www.facebook.com/pousadacanindesaojorge/" target="_blank">facebook.com/pousadacanindesaojorge</a>
                     </div>
                     <div className="item">
                         <InstaIcon size={20} color={'#000'} />
-                        <a href="instagram.com">instagram.com/pousadacaninde</a>
+                        <a href="https://www.instagram.com/pousadacaninde/">instagram.com/pousadacaninde</a>
                     </div>
                     <div className="item">
                         <MarkerIcon size={20} color={'#000'} />
-                        <span>Rua Canindé, 1119, São Jorge / PA</span>
+                        <span>Rua 12, Qd 6 Lt 13, São Jorge / Alto Paraíso - GO</span>
                     </div>
                 </div>
             </div>

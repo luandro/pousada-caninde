@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
          <link rel="shortcut icon" href="/static/favicon.ico" />
-         <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyB1nKALF_1Sdnq6GnPzFu6kAoSGrUQNVXo&sensor=false"></script>
+         <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyBsr3RFIuUoYkvrarEThfbq_beHu97AgXI&sensor=false"></script>
          <style>{`
           body, html {
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
