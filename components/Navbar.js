@@ -39,13 +39,7 @@ export default () => (
         align-items: center;  
       }
       .pic {
-        width: 5%;
-        background: #fff;
-        width: 162px;
-        padding: 15px;
-        margin-top: 93px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        margin-top: 86px;
       }
       .items {
         width: 80%;
