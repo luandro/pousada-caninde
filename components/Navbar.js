@@ -1,17 +1,49 @@
 import FaFacebook from 'react-icons/lib/fa/facebook'
 import FaInstagram from 'react-icons/lib/fa/instagram'
 import FaEnvelopeO from 'react-icons/lib/fa/envelope-o'
+import { Link } from 'react-scroll'
+
+const list = [
+  {
+    title: 'Home',
+    id: 'home',
+  },
+  {
+    title: 'A Pousada',
+    id: 'about',
+  },
+  {
+    title: 'Serviços',
+    id: 'services',
+  },
+  {
+    title: 'Fotos',
+    id: 'pictures',
+  },
+  {
+    title: 'Contatos',
+    id: 'contact',
+  },
+]
 
 export default () => (
   <div className="wrapper">
     <div className="container">
       <div className="pic"><img src="/static/logo.png" /></div>
       <div className="items">
-        <a>HOME</a>
-        <a>A POUSADA</a>
-        <a>SERVIÇOS</a>
-        <a>FOTOS</a>
-        <a>CONTATOS</a>
+        {list.map((item, key) => <Link
+          key={key}
+          to={item.id}
+          activeClass="active"
+          spy
+          smooth
+          offset={-50}
+          duration={800}
+          className="link"
+        >
+          {item.title}
+        </Link>
+        )}
       </div>
       <div className="social">
         <div className="socialItem"><FaFacebook /></div>
@@ -47,12 +79,6 @@ export default () => (
         flex-flow: row nowrap;
         justify-content: space-around;
         align-items: center; 
-      }
-      .items a {
-        font-size: 30px;
-        font-family: 'Mouse Memoirs', sans-serif;
-        font-weight: 400;
-        color: #fff;
       }
       .social {
         width: 10%;

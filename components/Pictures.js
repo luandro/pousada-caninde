@@ -20,7 +20,7 @@ const list = [
 ]
 
 export default () => (
-  <div className="wrapper">
+  <div className="wrapper" id="pictures">
     <div className="container">
       <h2>GALERIA DE FOTOS</h2>
       <div className="items ">

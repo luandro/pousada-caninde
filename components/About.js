@@ -1,5 +1,5 @@
 export default () => (
-  <div className="wrapper">
+  <div className="wrapper" id="about">
     <div className="container">
       <h2>A POUSADA</h2>
       <p>Fundada em 2002, a pousada é administrada pessoalmente pelos proprietários. Nós cuidamos de tudo para que você se sinta em casa: do carinho dedicado à preparação do café da manhâ ao cuidado na arrumação dos quartos.</p>
