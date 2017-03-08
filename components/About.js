@@ -12,6 +12,9 @@ export default () => (
         font-weight: 200;
         line-height: 1.5;
       } 
+      p:last-child {
+        margin-bottom: 0;
+      }
     `}</style>
   </div>
 ) 
