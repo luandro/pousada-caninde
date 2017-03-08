@@ -1,7 +1,7 @@
 export default ({ value, onChange }) => (
     <input
         style={{
-            padding: 5,
+            padding: '10px 0',
             border: '1px solid black',
             width: '100%',
         }}
