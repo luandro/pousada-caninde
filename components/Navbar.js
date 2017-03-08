@@ -52,9 +52,9 @@ export default ({ open, toggle }) => (
         <div className="socialItem"><a href="https://www.instagram.com/pousadacaninde/" target="_blank"><FaInstagram /></a></div>
         <div className="socialItem"><a href="mailto:pousadacaninde@gmail.com"><FaEnvelopeO /></a></div>
       </div>
-      <div className="mobileMenuBtn"><FaBars size="28" /></div>
+      <div className="mobileMenuBtn" onClick={toggle}><FaBars size="28" /></div>
     </div>
-    <ClickOutside onClickOutside={toggle}>
+    <ClickOutside onClickOutside={() => open && toggle()}>
       <div className={open ? "popup open" : "popup closed"}>
           {list.map((item, key) => <Link
             key={key}
