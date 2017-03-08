@@ -10,5 +10,7 @@ EXPOSE 80 443 43554
 
 WORKDIR /app
 
+RUN npm install
+
 # Start process.yml
 CMD ["pm2-docker", "start", "--auto-exit", "--env", "production", "process.yml"]
