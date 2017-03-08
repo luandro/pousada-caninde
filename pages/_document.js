@@ -13,10 +13,26 @@ export default class MyDocument extends Document {
     return (
      <html>
        <Head>
+         <link href="https://fonts.googleapis.com/css?family=Mouse+Memoirs" rel="stylesheet" />
          <style>{`
           body, html {
-          margin: 0; 
-          } /* custom! */
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            margin: 0; 
+          }
+          h2 {
+            font-size: 60px;
+            font-family: 'Mouse Memoirs', sans-serif;
+            color: #005FB6;
+            font-weight: 400;
+            margin: 30px;
+          }
+ 
+          @media(min-width: 1200px) {
+            .container {
+              width: 1170px;
+              margin: auto;
+            }
+          }
           `}</style>
        </Head>
        <body className="custom_class">
