@@ -34,6 +34,7 @@ export default class MyDocument extends Document {
           }
           .container {
             margin: auto;
+            width: 1170px;
           }
           h3 {
             font-family: Mouse Memoirs, sans-serif;
@@ -58,17 +59,19 @@ export default class MyDocument extends Document {
             color: #fff;
           }
           .slick-slide {
-            
+
           }
-          @media(min-width: 1024px) {
+          @media(max-width: 1200px) {
             .container {
-              width: 968px;
+              width: 992px;
               margin: auto;
             }
           }
-          @media(min-width: 1200px) {
-            .container {
-              width: 1170px;
+          @media(max-width: 768px) {
+            .pic img {
+              width: 130px;
+              margin-top: -34px;
+
             }
           }
           `}</style>
