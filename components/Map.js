@@ -1,12 +1,18 @@
 import GoogleMapReact from 'google-map-react'
 
 const Map = ({ center, zoom }) => (
-    <div>
+    <div className="wrapper">
         <GoogleMapReact
             defaultCenter={center}
             defaultZoom={zoom}
         >
         </GoogleMapReact>
+        <style jsx>{`
+            .wrapper {
+                height: 500px;
+                width: 100%;
+            }
+        `}</style>
     </div>
 )
 

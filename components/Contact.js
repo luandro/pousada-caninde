@@ -37,15 +37,15 @@ export default ({ handleChange, handleSubmit }) => (
                     </div>
                     <div>
                         <FbIcon size={20} color={'#000'} />
-                        <span>(61) 3892 8293</span>
+                        <a href="facebook.com">facebook.com/pousadacaninde</a>
                     </div>
                     <div>
                         <InstaIcon size={20} color={'#000'} />
-                        <span>(61) 3892 8293</span>
+                        <a href="instagram.com">instagram.com/pousadacaninde</a>
                     </div>
                     <div>
                         <MarkerIcon size={20} color={'#000'} />
-                        <span>(61) 3892 8293</span>
+                        <span>Rua Canindé, 1119, São Jorge / PA</span>
                     </div>
                 </div>
             </div>
@@ -67,9 +67,15 @@ export default ({ handleChange, handleSubmit }) => (
             .wrapper {
                 padding: 50px 0;
                 text-align: center;
+                box-shadow: 0 4px 4px rgba(0,0,0,0.8);
+                z-index: 1;
+            }
+            .wrapper h3 {
+                text-transform: uppercase;
+                width: 100%;
             }
             .container {
-                
+                padding-bottom: 50px;
             }
             .box {
             }
@@ -78,6 +84,7 @@ export default ({ handleChange, handleSubmit }) => (
                 max-width: 80%;
             }
             .list {
+                height: 120px;
                 margin-top: 30px;
                 display: flex;
                 flex-flow: column;
@@ -103,7 +110,7 @@ export default ({ handleChange, handleSubmit }) => (
                 }
                 .box {
                     width: 45%;  
-                    height: 250px;                  
+                    height: 300px;                  
                 }
             }
         `}</style>
