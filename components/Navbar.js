@@ -1,6 +1,7 @@
 import FaFacebook from 'react-icons/lib/fa/facebook'
 import FaInstagram from 'react-icons/lib/fa/instagram'
 import FaEnvelopeO from 'react-icons/lib/fa/envelope-o'
+import FaBars from 'react-icons/lib/fa/bars'
 import { Link } from 'react-scroll'
 
 const list = [
@@ -50,6 +51,7 @@ export default () => (
         <div className="socialItem"><FaInstagram /></div>
         <div className="socialItem"><FaEnvelopeO /></div>
       </div>
+      <div className="mobileMenuBtn"><FaBars size="28" /></div>
     </div>
     <style jsx>{`
       .wrapper {
@@ -91,6 +93,23 @@ export default () => (
         height: 20px;
         border-radius: 50%;
         padding: 5px;
+      }
+      .mobileMenuBtn {
+        display: none;
+        margin-right: 23px;
+      }
+      @media(max-width: 1200px) {
+        .items {
+          width: 70%;
+        }
+      }
+      @media(max-width: 768px) {
+        .mobileMenuBtn {
+          display: block;
+        }
+        .social, .items {
+          display: none;
+        }
       }
     `}</style>
   </div>
